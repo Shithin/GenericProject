@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		FAF3704021674D6700E9B487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3703F21674D6700E9B487 /* AppDelegate.swift */; };
-		FAF3704221674D6700E9B487 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3704121674D6700E9B487 /* ViewController.swift */; };
 		FAF3704521674D6700E9B487 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF3704321674D6700E9B487 /* Main.storyboard */; };
 		FAF3704721674D6A00E9B487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF3704621674D6A00E9B487 /* Assets.xcassets */; };
 		FAF3704A21674D6A00E9B487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF3704821674D6A00E9B487 /* LaunchScreen.storyboard */; };
+		FAF3705521674E7200E9B487 /* BaseListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3705421674E7200E9B487 /* BaseListTableViewController.swift */; };
+		FAF37057216750A400E9B487 /* SelectionTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF37056216750A400E9B487 /* SelectionTVC.swift */; };
+		FAF3705A216750DF00E9B487 /* SingleFieldTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF37059216750DF00E9B487 /* SingleFieldTVCell.swift */; };
+		FAF3705C216751A600E9B487 /* SingleFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF3705B216751A600E9B487 /* SingleFieldViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FAF3703C21674D6700E9B487 /* GenericProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF3703F21674D6700E9B487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAF3704121674D6700E9B487 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAF3704421674D6700E9B487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAF3704621674D6A00E9B487 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAF3704921674D6A00E9B487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAF3704B21674D6A00E9B487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF3705421674E7200E9B487 /* BaseListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListTableViewController.swift; sourceTree = "<group>"; };
+		FAF37056216750A400E9B487 /* SelectionTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionTVC.swift; sourceTree = "<group>"; };
+		FAF37059216750DF00E9B487 /* SingleFieldTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFieldTVCell.swift; sourceTree = "<group>"; };
+		FAF3705B216751A600E9B487 /* SingleFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFieldViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		FAF3703E21674D6700E9B487 /* GenericProject */ = {
 			isa = PBXGroup;
 			children = (
+				FAF3705321674E3000E9B487 /* View */,
+				FAF3705221674E2600E9B487 /* Controller */,
+				FAF3705121674E1E00E9B487 /* model */,
 				FAF3703F21674D6700E9B487 /* AppDelegate.swift */,
-				FAF3704121674D6700E9B487 /* ViewController.swift */,
 				FAF3704321674D6700E9B487 /* Main.storyboard */,
 				FAF3704621674D6A00E9B487 /* Assets.xcassets */,
 				FAF3704821674D6A00E9B487 /* LaunchScreen.storyboard */,
 				FAF3704B21674D6A00E9B487 /* Info.plist */,
 			);
 			path = GenericProject;
+			sourceTree = "<group>";
+		};
+		FAF3705121674E1E00E9B487 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FAF3705421674E7200E9B487 /* BaseListTableViewController.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FAF3705221674E2600E9B487 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAF37056216750A400E9B487 /* SelectionTVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FAF3705321674E3000E9B487 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAF37058216750B800E9B487 /* SingleField */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAF37058216750B800E9B487 /* SingleField */ = {
+			isa = PBXGroup;
+			children = (
+				FAF37059216750DF00E9B487 /* SingleFieldTVCell.swift */,
+				FAF3705B216751A600E9B487 /* SingleFieldViewModel.swift */,
+			);
+			path = SingleField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF3704221674D6700E9B487 /* ViewController.swift in Sources */,
+				FAF37057216750A400E9B487 /* SelectionTVC.swift in Sources */,
+				FAF3705C216751A600E9B487 /* SingleFieldViewModel.swift in Sources */,
+				FAF3705521674E7200E9B487 /* BaseListTableViewController.swift in Sources */,
+				FAF3705A216750DF00E9B487 /* SingleFieldTVCell.swift in Sources */,
 				FAF3704021674D6700E9B487 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
